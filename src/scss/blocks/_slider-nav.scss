@@ -1,0 +1,33 @@
+.slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  width: 100%;
+  z-index: 101;
+  @include tabletSM(display, none);
+}
+
+.slider-nav__arrow {
+  cursor: pointer;
+}
+
+.slider-nav__arrow-svg {
+  display: block;
+  fill: var(--color-black);
+  transition: fill .3s ease-in-out;
+}
+
+.slider-nav__arrow:hover .slider-nav__arrow-svg {
+  fill: var(--color-pink);
+}
+
+.slider-nav__arrow--prev.swiper-button-disabled,
+.slider-nav__arrow--next.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}

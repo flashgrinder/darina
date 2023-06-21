@@ -73,7 +73,7 @@
 	font-style: normal;
 	margin: 0;
 	&--big {
-		font-size: responsive 24px 26px;
+		font-size: responsive 20px 26px;
 		font-range: 992px 1768px;
 	}
 	&--large {
@@ -117,7 +117,7 @@
 	&--black {
 		color: var(--color-black);
 	}
-	&--white {
+	&--gray {
 		color: var(--color-gray);
 	}
 	&--w-regular {
