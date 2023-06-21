@@ -1,0 +1,299 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PF DinDisplay Pro";
+  src: url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Regular.eot");
+  src: url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Regular.woff2") format("woff2"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Regular.woff") format("woff"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PF DinDisplay Pro";
+  src: url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Medium.eot");
+  src: url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Medium.woff2") format("woff2"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Medium.woff") format("woff"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PFDinDisplayPro";
+  src: url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Bold.eot");
+  src: url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Bold.woff2") format("woff2"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Bold.woff") format("woff"), url("../../fonts/PFDinDisplayPro/PFDinDisplayPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray: #808080;
+  --font-main: "PF DinDisplay Pro", "Roboto", Helvetica, Arial, sans-serif;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Animation */
+
+/* Base Classes */
+
+/* Containers */
+
+.container {
+  max-width: 1768px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-full {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Hide */
+
+.hide {
+  display: none !important;
+}
+
+/* Position */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Background */
+
+.bg--white {
+  background-color: var(--color-white);
+}
+
+.block-padding {
+  padding: 75px 0;
+}
+
+.block-padding-small {
+  padding: 50px 0 50px;
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+.link:hover {
+  color: var(--color-blue);
+}
+
+/* Title */
+
+.title {
+  font-family: var(--font-main);
+  font-style: normal;
+  margin: 0;
+}
+
+.title--big {
+  font-size: calc(24px + 2 * ((100vw - 992px) / 776));
+}
+
+@media screen and (min-width: 1768px) {
+
+  .title--big {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .title--big {
+    font-size: 24px;
+  }
+}
+
+.title--large {
+  font-size: 24px;
+}
+
+.title--black {
+  color: var(--color-black);
+}
+
+.title--w-normal {
+  font-weight: normal;
+}
+
+.title--w-medium {
+  font-weight: 500;
+}
+
+.title--w-bold {
+  font-weight: bold;
+}
+
+.title--uppercase {
+  text-transform: uppercase;
+}
+
+.title--indent {
+  margin: 0 0 40px;
+}
+
+/* Text */
+
+.text {
+  font-family: var(--font-main);
+  font-style: normal;
+  margin: 0;
+}
+
+.text--medium {
+  font-size: 18px;
+}
+
+.text--normal {
+  font-size: calc(18px + -2 * ((100vw - 992px) / 776));
+}
+
+@media screen and (min-width: 1768px) {
+
+  .text--normal {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .text--normal {
+    font-size: 18px;
+  }
+}
+
+.text--black {
+  color: var(--color-black);
+}
+
+.text--white {
+  color: var(--color-gray);
+}
+
+.text--w-regular {
+  font-weight: normal;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* ANOTHER MODULES */
+
+/* Swiper Slider Examples*/
+
+/* ANOTHER MODULES */
+
+/* Blocks */
+
+/* Page */
+
+.page {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.page__container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+
+  .title--indent {
+    margin: 0 0 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hide-tabletSM {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-full {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

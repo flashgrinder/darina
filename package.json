@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "darina-blog",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -63,5 +63,13 @@
     "last 15 version",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flashgrinder/darina.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flashgrinder/darina/issues"
+  },
+  "homepage": "https://github.com/flashgrinder/darina#readme"
 }
