@@ -584,6 +584,80 @@ img {
 
 .slider-blog__title {
   margin-top: 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.slider-blog__title:hover {
+  color: var(--color-pink);
+}
+
+.post {
+  padding: 50px 0;
+}
+
+.post-container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.post__pic {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.post__img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.post__body {
+  box-shadow: 0 4px 17px rgba(157, 157, 157, 0.25);
+  border-radius: 10px;
+  margin-top: 29px;
+  padding: 35px 48px 42px;
+}
+
+.post__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.post__voting {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.post__like,
+.post__dislike {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post__voting-svg {
+  display: block;
+  fill: var(--color-gray);
+  transition: fill 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.post__like:hover .post__voting-svg,
+.post__dislike:hover .post__voting-svg {
+  fill: var(--color-pink);
+}
+
+.post .slider-blog__title {
+  font-size: 20px;
 }
 
 /* MEDIA QUERIES */

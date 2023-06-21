@@ -1,0 +1,196 @@
+{% set title = "Блог" %}
+
+{% extends "layouts/_default.html" %}
+
+{% block content %}
+
+<!-- Post -->
+<section class="post">
+    <article class="post__article post-container">
+        <header class="post__header">
+            <div class="post__category text text--gray text--medium text--w-regular">
+                Новости
+            </div>
+            <div class="post__pic">
+                <img src="img/blog/img-post.jpg" alt="" class="post__img">
+            </div>
+        </header>
+        <div class="post__body">
+            <h1 class="post__title title title--black title--large title--w-bold title--uppercase">
+                АО «ГАЗПРОМ БЫТОВЫЕ СИСТЕМЫ» ПРЕДСТАВИЛО ОБОРУДОВАНИЕ НА МЕРОПРИЯТИИ, ПОСВЯЩЕННОМ ВОПРОСАМ ГАЗИФИКАЦИИ СУБЪЕКТОВ РОССИЙСКОЙ ФЕДЕРАЦИИ
+            </h1>
+            <div class="post__wysiwyg">
+                <p>
+                    12 января в г. Гатчина Ленинградской области под руководством заместителя Председателя Совета Безопасности РФ Дмитрия Медведева и заместителя Председателя Правительства РФ Александра Новака состоялось совещание по социальной газификации.
+                </p>
+                <p>
+                    В мероприятии также приняли участие первый заместитель Председателя Совета Федерации Федерального собрания РФ, секретарь Генерального совета партии «Единая Россия» Андрей Турчак, губернатор Ленинградской области Александр Дрозденко, заместитель Председателя Правления ПАО «Газпром» Виталий Маркелов и генеральный директор ООО «Газпром межрегионгаз» и ООО «Газпром газификация» Сергей Густов.
+                </p>
+            </div>
+
+            <div class="post__wysiwyg">
+                <p>
+                    В рамках мероприятия АО «Газпром бытовые системы» представило ассортимент встраиваемой бытовой техники: духовые шкафы, варочные поверхности, газовых и комбинированных стационарных плит ТМ DARINA и ТМ FLAMA, а также газовых колонок ТМ DARINA. На сегодняшний день между АО «Газпром бытовые системы» и дочерними компаниями ООО «Газпром межрегионгаз» сложились партнерские отношения, позволяющие заключать договоры на поставки необходимого оборудования по всей стране.
+                </p>
+                <p>
+                    На совещании стороны подвели итоги догазификации в 2022 г., обсудили планы реализации программы на текущий год, в том числе ускоренное подключение к газовым сетям медицинских и образовательных учреждений, а также меры региональной соцподдержки граждан при газификации домовладений.
+                </p>
+            </div>
+            <div class="post__meta">
+                <div class="post__voting">
+                    <div class="post__like">
+                        <svg class="post__voting-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.39 18.49V8.33001C8.39 7.93001 8.51 7.54001 8.73 7.21001L11.46 3.15001C11.89 2.50001 12.96 2.04001 13.87 2.38001C14.85 2.71001 15.5 3.81001 15.29 4.79001L14.77 8.06001C14.73 8.36001 14.81 8.63001 14.98 8.84001C15.15 9.03001 15.4 9.15001 15.67 9.15001H19.78C20.57 9.15001 21.25 9.47001 21.65 10.03C22.03 10.57 22.1 11.27 21.85 11.98L19.39 19.47C19.08 20.71 17.73 21.72 16.39 21.72H12.49C11.82 21.72 10.88 21.49 10.45 21.06L9.17 20.07C8.68 19.7 8.39 19.11 8.39 18.49ZM5.21 6.37901H4.18C2.63 6.37901 2 6.97901 2 8.45901V18.519C2 19.999 2.63 20.599 4.18 20.599H5.21C6.76 20.599 7.39 19.999 7.39 18.519V8.45901C7.39 6.97901 6.76 6.37901 5.21 6.37901Z"/>
+                        </svg>
+                        <div class="post__voting-num text text--gray text--medium text--w-regular">
+                            0
+                        </div>
+                    </div>
+                    <div class="post__dislike">
+                        <svg class="post__voting-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.609 5.49999V15.66C15.609 16.06 15.489 16.45 15.269 16.78L12.539 20.84C12.109 21.49 11.039 21.95 10.129 21.61C9.14904 21.28 8.49904 20.18 8.70904 19.2L9.22904 15.93C9.26904 15.63 9.18904 15.36 9.01904 15.15C8.93217 15.0529 8.82585 14.9751 8.70698 14.9217C8.58811 14.8683 8.45935 14.8404 8.32904 14.84H4.21904C3.42904 14.84 2.74904 14.52 2.34904 13.96C1.96904 13.42 1.89904 12.72 2.14904 12.01L4.60904 4.51999C4.91904 3.27999 6.26904 2.26999 7.60904 2.26999H11.509C12.179 2.26999 13.119 2.49999 13.549 2.92999L14.829 3.91999C15.0711 4.1063 15.2672 4.34558 15.4024 4.61946C15.5376 4.89334 15.6083 5.19455 15.609 5.49999ZM18.79 17.608H19.82C21.37 17.608 22 17.008 22 15.528V5.47799C22 3.99799 21.37 3.39799 19.82 3.39799H18.79C17.24 3.39799 16.61 3.99799 16.61 5.47799V15.538C16.61 17.008 17.24 17.608 18.79 17.608Z"/>
+                        </svg>
+                        <div class="post__voting-num text text--gray text--medium text--w-regular">
+                            0
+                        </div>
+                    </div>
+                </div>
+                <div class="post__date text text--gray text--medium text--w-regular">
+                    12.05.2023
+                </div>
+            </div>
+        </div>
+        <footer class="post__foooter">
+            <!-- Slider-blog -->
+            <section class="slider-blog js-slider-blog-init">
+                <div class="slider-blog__container">
+                    <div class="title-divider">
+                        <div class="title-divider__line"></div>
+                        <h2 class="title-divider__text title title--black title--large title--w-medium title--uppercase center">
+                            Может быть интересно
+                        </h2>
+                        <div class="title-divider__line"></div>
+                    </div>
+                    <div class="slider-blog__outer">
+                        <div class="slider-blog__swiper-container swiper-container js-slider-blog">
+                            <div class="slider-blog__swiper-wrapper swiper-wrapper">
+                                <!-- Slider-item -->
+                                <article class="slider-blog__slide swiper-slide">
+                                    <div class="slider-blog__item">
+                                        <a href="" class="slider-blog__link">
+                                            <div class="slider-blog__pic">
+                                                <img src="img/blog/img-kitchen-1.jpg" alt="" class="slider-blog__img">
+                                            </div>
+                                        </a>
+                                        <div class="slider-blog__meta">
+                                            <div class="slider-blog__category text text--gray text--medium text--w-regular">
+                                                Шоу
+                                            </div>
+                                            <div class="slider-blog__date text text--gray text--medium text--w-regular">
+                                                12.05.2023
+                                            </div>
+                                        </div>
+                                        <a href="" class="slider-blog__link">
+                                            <h3 class="slider-blog__title title title--black title--big title--w-bold title--uppercase">
+                                                НОВОГОДНИЙ ВЫПУСК "ЗВЕЗДНОЙ КУХНИ" 24 ДЕКАБРЯ
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- /. Slider-item -->
+                                <!-- Slider-item -->
+                                <article class="slider-blog__slide swiper-slide">
+                                    <div class="slider-blog__item">
+                                        <a href="" class="slider-blog__link">
+                                            <div class="slider-blog__pic">
+                                                <img src="img/blog/img-kitchen-2.jpg" alt="" class="slider-blog__img">
+                                            </div>
+                                        </a>
+                                        <div class="slider-blog__meta">
+                                            <div class="slider-blog__category text text--gray text--medium text--w-regular">
+                                                Шоу
+                                            </div>
+                                            <div class="slider-blog__date text text--gray text--medium text--w-regular">
+                                                12.05.2023
+                                            </div>
+                                        </div>
+                                        <a href="" class="slider-blog__link">
+                                            <h3 class="slider-blog__title title title--black title--big title--w-bold title--uppercase">
+                                                ЭФИР "ЗВЕЗДНАЯ КУХНЯ" НА ТНТ 17 ДЕКАБРЯ
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- /. Slider-item -->
+                                <!-- Slider-item -->
+                                <article class="slider-blog__slide swiper-slide">
+                                    <div class="slider-blog__item">
+                                        <a href="" class="slider-blog__link">
+                                            <div class="slider-blog__pic">
+                                                <img src="img/blog/img-kitchen-3.jpg" alt="" class="slider-blog__img">
+                                            </div>
+                                        </a>
+                                        <div class="slider-blog__meta">
+                                            <div class="slider-blog__category text text--gray text--medium text--w-regular">
+                                                Шоу
+                                            </div>
+                                            <div class="slider-blog__date text text--gray text--medium text--w-regular">
+                                                12.05.2023
+                                            </div>
+                                        </div>
+                                        <a href="" class="slider-blog__link">
+                                            <h3 class="slider-blog__title title title--black title--big title--w-bold title--uppercase">
+                                                "БИТВА ШЕФОВ" 12 ДЕКАБРЯ
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- /. Slider-item -->
+                                <!-- Slider-item -->
+                                <article class="slider-blog__slide swiper-slide">
+                                    <div class="slider-blog__item">
+                                        <a href="" class="slider-blog__link">
+                                            <div class="slider-blog__pic">
+                                                <img src="img/blog/img-kitchen-1.jpg" alt="" class="slider-blog__img">
+                                            </div>
+                                        </a>
+                                        <div class="slider-blog__meta">
+                                            <div class="slider-blog__category text text--gray text--medium text--w-regular">
+                                                Шоу
+                                            </div>
+                                            <div class="slider-blog__date text text--gray text--medium text--w-regular">
+                                                12.05.2023
+                                            </div>
+                                        </div>
+                                        <a href="" class="slider-blog__link">
+                                            <h3 class="slider-blog__title title title--black title--big title--w-bold title--uppercase">
+                                                "БИТВА ШЕФОВ" 22 ДЕКАБРЯ
+                                            </h3>
+                                        </a>
+                                    </div>
+                                </article>
+                                <!-- /. Slider-item -->
+                            </div>
+                        </div>
+                        <div class="slider-blog__nav slider-nav">
+                            <div class="slider-blog__swiper-button-prev slider-blog__slider-arrow js-slider-blog-prev slider-nav__arrow slider-nav__arrow--prev">
+                                <svg class="slider-blog__slider-arrow-svg slider-nav__arrow-svg" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30 8.75C30.6904 8.75 31.25 9.30964 31.25 10C31.25 10.6904 30.6904 11.25 30 11.25L30 8.75ZM1.11612 10.8839C0.627962 10.3957 0.627962 9.60427 1.11612 9.11611L9.07107 1.16116C9.55922 0.673008 10.3507 0.673008 10.8388 1.16116C11.327 1.64932 11.327 2.44078 10.8388 2.92893L3.76777 10L10.8388 17.0711C11.327 17.5592 11.327 18.3507 10.8388 18.8388C10.3507 19.327 9.55922 19.327 9.07107 18.8388L1.11612 10.8839ZM30 11.25L2 11.25L2 8.75L30 8.75L30 11.25Z"/>
+                                </svg>
+                            </div>
+                            <div class="slider-blog__swiper-button-next slider-blog__slider-arrow js-slider-blog-next slider-nav__arrow slider-nav__arrow--next">
+                                <svg class="slider-blog__slider-arrow-svg slider-nav__arrow-svg" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 8.75C1.30964 8.75 0.75 9.30964 0.75 10C0.75 10.6904 1.30964 11.25 2 11.25L2 8.75ZM30.8839 10.8839C31.372 10.3957 31.372 9.60427 30.8839 9.11611L22.9289 1.16116C22.4408 0.673008 21.6493 0.673008 21.1612 1.16116C20.673 1.64932 20.673 2.44078 21.1612 2.92893L28.2322 10L21.1612 17.0711C20.673 17.5592 20.673 18.3507 21.1612 18.8388C21.6493 19.327 22.4408 19.327 22.9289 18.8388L30.8839 10.8839ZM2 11.25L30 11.25L30 8.75L2 8.75L2 11.25Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /. Slider-blog -->
+        </footer>
+    </article>
+</section>
+<!-- /. Post -->
+
+{% endblock %}

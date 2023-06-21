@@ -45,4 +45,9 @@
 
 .slider-blog__title {
   margin-top: 8px;
+  transition: color .3s ease-in-out;
+}
+
+.slider-blog__title:hover {
+  color: var(--color-pink);
 }
