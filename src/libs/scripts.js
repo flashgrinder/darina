@@ -1,12 +1,10 @@
-import gsap from 'gsap';
 import sliderBlog from '../libs/modules/slider-blog';
+import fancybox from '../libs/modules/fancybox';
 document.addEventListener('DOMContentLoaded', function(e) {
 
-    gsap.config({
-        nullTargetWarn: true,
-        force3D: true
-    });
+    const sliderBlogTrue = document.querySelector('.js-slider-blog-init');
+    const fancyboxTrue = document.querySelector('.js-fancybox-init');
+    fancyboxTrue ? fancybox.init() : false;
+    sliderBlogTrue ? sliderBlog.init() : false;
 
-    const sliderBlogSliderTrue = document.querySelector('.js-slider-blog-init');
-    sliderBlogSliderTrue ? sliderBlog.init() : false;
 });
