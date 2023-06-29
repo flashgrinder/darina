@@ -1,0 +1,74 @@
+.feedback-us {
+  padding: 30px 0;
+}
+
+.feedback-us__subtitle {
+  margin: 0 auto;
+  max-width: 498px;
+}
+
+.feedback-us__outer-form {
+  margin: 0 auto;
+  max-width: 638px;
+}
+
+.feedback-us__text-select {
+  margin-top: 39px;
+}
+
+.feedback-us__star {
+  color: var(--color-pink);
+}
+
+.feedback-us__select {
+  margin-top: 8px;
+  background: rgba(239, 239, 239, 1);
+  border-radius: 12px;
+  padding: 14px 21px;
+  border: none;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  z-index: 101;
+}
+
+.feedback-us__select.ss-main .ss-values .ss-placeholder {
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.feedback-us__select.ss-main .ss-arrow path {
+  stroke: var(--color-pink);
+}
+
+.feedback-us__select.ss-main.ss-open-below {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.feedback-us__select.ss-content {
+  background: var(--color-white);
+  border-radius: 0 0 16px 16px;
+  transform: scaleY(0) translateY(0px);
+  z-index: 1;
+}
+
+.feedback-us__select.ss-content.ss-open-below {
+  transform: scaleY(1) translateY(-6px);
+  z-index: 1;
+}
+
+.feedback-us__select.ss-content .ss-list .ss-option {
+  padding: 8px 7px;
+}
+
+.feedback-us__select.ss-content .ss-list .ss-option:hover,
+.feedback-us__select.ss-content .ss-list .ss-option:active,
+.feedback-us__select.ss-content .ss-list .ss-option:focus,
+.feedback-us__select.ss-content .ss-list .ss-option:target,
+.feedback-us__select.ss-content .ss-list .ss-option.ss-selected {
+  background: transparent;
+  color: var(--color-pink);
+}
+
+.feedback-us__form {
+  height: 50vh;
+}
