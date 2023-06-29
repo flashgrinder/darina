@@ -15,6 +15,8 @@ function init() {
 
         if ( slider ) {
             let sliderBlog = new Swiper(slider, {
+                observer: true,
+                observeParents: true,
                 slidesPerView: 1.5,
                 spaceBetween: 32,
                 autoHeight: true,
@@ -30,9 +32,12 @@ function init() {
                     }
                 }
             });
+            sliderBlog.init();
         }
         if(sliderFresh) {
             let sliderBlogFresh = new Swiper(sliderFresh, {
+                observer: true,
+                observeParents: true,
                 slidesPerView: 1.2,
                 spaceBetween: 32,
                 autoHeight: true,
@@ -47,6 +52,7 @@ function init() {
                     }
                 }
             });
+            sliderBlogFresh.init();
         }
     });
 
