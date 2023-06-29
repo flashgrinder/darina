@@ -9,4 +9,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
     sliderBlogTrue ? sliderBlog.init() : false;
     slimSelect.init();
 
+    // Fake Input
+    const fakeInput = document.querySelectorAll('.feedback-us__file input[type=file]');
+    fakeInput.forEach(function(input) {
+        input.addEventListener('change', function() {
+            let file = this.files[0];
+            this.closest('.feedback-us__file').querySelector('.feedback-us__file-btn').innerHTML = file.name;
+        });
+    });
+
 });

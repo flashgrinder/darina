@@ -1,0 +1,17 @@
+.button {
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 11px;
+  padding: 15px 40px 15px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--primary {
+  color: var(--color-white);
+  background: var(--color-pink);
+}
