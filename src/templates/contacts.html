@@ -15,7 +15,7 @@
             <div class="title-divider__line"></div>
         </div>
         <div class="contacts__outer">
-            <div class="contacts__map" id="map_c"></div>
+            <div class="contacts__maps" id="map_c"></div>
             <div class="contacts__plunk-map">
                 <h3 class="contacts__title text text--pink text--medium text--w-bold text--uppercase">
                     Контакты
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="contacts__inner">
-            <div class="contacts__item">
+            <div class="contacts__items">
                 <div class="contacts__title-item text text--pink text--medium text--w-bold text--uppercase">
                     Отдел продаж
                 </div>
@@ -73,7 +73,7 @@
                     </div>
                 </a>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__items">
                 <div class="contacts__title-item text text--pink text--medium text--w-bold text--uppercase">
                     Отдел сервисного обслуживания
                 </div>
@@ -94,7 +94,7 @@
                     </div>
                 </a>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__items">
                 <div class="contacts__title-item text text--pink text--medium text--w-bold text--uppercase">
                     Отдел управления персоналом
                 </div>
@@ -115,7 +115,7 @@
                     </div>
                 </a>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__items">
                 <div class="contacts__title-item text text--pink text--medium text--w-bold text--uppercase">
                     Диспетчер аварийной службы
                 </div>
@@ -181,7 +181,57 @@
                     <option value="Без привязки к конкретному отделу">Без привязки к конкретному отделу</option>
                 </select>
             </div>
-            <form action="" class="feedback-us__form"></form>
+            <form action="" class="feedback-us__form">
+                <div class="feedback-us__fields">
+                    <div class="feedback-us__field-title text text--black text--normal text--w-regular">
+                        ФИО <span class="feedback-us__star">*</span>
+                    </div>
+                    <input type="text" name="form_name" class="feedback-us__input" placeholder="Введите ваше ФИО">
+                </div>
+                <div class="feedback-us__fields">
+                    <div class="feedback-us__field-title text text--black text--normal text--w-regular">
+                        Ваш город <span class="feedback-us__star">*</span>
+                    </div>
+                    <input type="text" name="form_city" class="feedback-us__input" placeholder="Город">
+                </div>
+                <div class="feedback-us__fields--col feedback-us__fields">
+                    <div class="feedback-us__fields">
+                        <div class="feedback-us__field-title text text--black text--normal text--w-regular">
+                            Контактный телефон <span class="feedback-us__star">*</span>
+                        </div>
+                        <input type="tel" name="form_phone" class="feedback-us__input" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="feedback-us__fields">
+                        <div class="feedback-us__field-title text text--black text--normal text--w-regular">
+                            E-mail <span class="feedback-us__star">*</span>
+                        </div>
+                        <input type="text" name="form_email" class="feedback-us__input" placeholder="Введите почтовый адрес">
+                    </div>
+                </div>
+                <div class="feedback-us__fields">
+                    <div class="feedback-us__field-title text text--black text--normal text--w-regular">
+                        Сообщение <span class="feedback-us__star">*</span>
+                    </div>
+                    <textarea name="form_message" id="" rows="3" class="feedback-us__input feedback-us__input--textarea" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="feedback-us__fields">
+                    <label class="feedback-us__file">
+                        <input type="file" name="form_file" class="feedback-us__input feedback-us__input--file">
+                        <span class="feedback-us__file-btn text text--black text--normal text--w-regular">Прикрепить файл</span>
+                    </label>
+                </div>
+                <div class="feedback-us__fields--col feedback-us__fields--col-footer feedback-us__fields">
+                    <label class="custom-checkbox feedback-us__checkbox-fake">
+                        <input type="checkbox" value="yes" class="feedback-us__checkbox">
+                        <div class="feedback-us__agree-text text text--black text--normal text--w-regular">
+                            Согласен с условиями обработки <br> <a href="" class="feedback-us__link-agree link"> персональных данных</a>
+                        </div>
+                    </label>
+                    <button type="submit" class="feedback-form__btn buttons buttons--primary">
+                        Отправить сообщение
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
